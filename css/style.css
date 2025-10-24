@@ -8121,8 +8121,6 @@ textarea.form-control {
 .ftco-no-pt {
   padding-top: 0 !important; }
 
-.ftco-no-pb {
-  padding-bottom: 0 !important; }
 
 .ftco-bg-dark {
   background: #3c312e; }
@@ -8889,7 +8887,7 @@ a.whatsapp .icon-whatsapp {
 
 .reel-video {
   width: 100%;
-  height: 500px; /* Vertical reel look */
+  height: 00px; /* Vertical reel look */
   object-fit: cover;
   border-radius: 16px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
@@ -9015,11 +9013,14 @@ video:hover {
   right: -100px; /* adjust for desktop */
 }
 
+.video-wrapper video {
+  width: 100%;           /* fill column width */
+  height: 650px;         /* smaller height for phones */
+  object-fit: cover;     /* maintain aspect ratio, crop if needed */
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
 
-    .video-wrapper video {
-      max-height: 400px; /* 👈 Reduce video height */
-      object-fit: cover;
-    }
 
     @media (max-width: 768px) {
       .carousel-control-prev.custom-arrow,
@@ -9030,7 +9031,7 @@ video:hover {
       }
 
       .video-wrapper video {
-        max-height: 200px;
+        max-height: 900px;
       }
     }
   
