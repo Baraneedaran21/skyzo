@@ -58,7 +58,7 @@
 
     <!-- Section 1: Hero Section Start -->
 	  <section id="home-section" class="hero">
-  <div class="home-slider owl-carousel">
+  <div class="">
     <div class="slider-item">
       <div class="overlay"></div>
       <div class="container">
@@ -234,87 +234,84 @@
 
     <!-- Section 5: Projects Section Start -->
 <!-- Bootstrap Carousel with Video Slides -->
-<!-- Bootstrap Carousel with Video Slides -->
-<section style="background: #000; padding: 60px 0;">
-  <div class="container text-white text-center pb-5">
-    <h2 class="mb-3">OUR CLIENT WORKS</h2>
-    <p>Our best work showcased in a style that fits your feed — quick, vertical, and engaging.</p>
-  </div>
+    <section style="background: #000; padding: 60px 0;" id="projects-section">
+      <div class="container text-white text-center pb-5">
+        <h2 class="mb-3">OUR CLIENT WORKS</h2>
+        <p>Our best work showcased in a style that fits your feed — quick, vertical, and engaging.</p>
+      </div>
 
-  <div class="container position-relative">
-    <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-      <div class="carousel-inner">
+      <div class="container position-relative">
+        <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+          <div class="carousel-inner">
 
-        <!-- Slide 1 -->
-        <div class="carousel-item active">
-          <div class="row justify-content-center gx-3">
-            <div class="col-lg-4 col-md-6 col-12 mb-4">
-              <div class="video-wrapper">
-                <video class="w-100 rounded-4 shadow" autoplay muted loop playsinline>
-                  <source src="videos/vipra_client_02.mp4" type="video/mp4">
-                </video>
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="row justify-content-center gx-3">
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                  <div class="video-wrapper">
+                    <video class="w-100 rounded-4 shadow" autoplay muted loop playsinline>
+                      <source src="videos/vipra_client_02.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                  <div class="video-wrapper">
+                    <video class="w-100 rounded-4 shadow" autoplay muted loop playsinline>
+                      <source src="videos/smilescape_dental.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                  <div class="video-wrapper">
+                    <video class="w-100 rounded-4 shadow" autoplay muted loop playsinline>
+                      <source src="videos/vipra_client.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-12 mb-4">
-              <div class="video-wrapper">
-                <video class="w-100 rounded-4 shadow" autoplay muted loop playsinline>
-                  <source src="videos/smilescape_dental.mp4" type="video/mp4">
-                </video>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12 mb-4">
-              <div class="video-wrapper">
-                <video class="w-100 rounded-4 shadow" autoplay muted loop playsinline>
-                  <source src="videos/vipra_client.mp4" type="video/mp4">
-                </video>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="row justify-content-center gx-3">
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                  <div class="video-wrapper">
+                    <video class="w-100 rounded-4 shadow" autoplay muted loop playsinline>
+                      <source src="videos/smilescape_dental_ 02.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                  <div class="video-wrapper">
+                    <video class="w-100 rounded-4 shadow" autoplay muted loop playsinline>
+                      <source src="videos/heaven_interior.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                  <div class="video-wrapper">
+                    <video class="w-100 rounded-4 shadow" autoplay muted loop playsinline>
+                      <source src="videos/elite_dental_02.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+            <!-- Arrows -->
+          <button class="carousel-control-prev custom-arrow" type="button"
+                  data-bs-target="#videoCarousel" data-bs-slide="prev">
+            <span aria-hidden="true">&lt;</span>
+          </button>
 
-        <!-- Slide 2 -->
-        <div class="carousel-item">
-          <div class="row justify-content-center gx-3">
-            <div class="col-lg-4 col-md-6 col-12 mb-4">
-              <div class="video-wrapper">
-                <video class="w-100 rounded-4 shadow" autoplay muted loop playsinline>
-                  <source src="videos/smilescape_dental_ 02.mp4" type="video/mp4">
-                </video>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12 mb-4">
-              <div class="video-wrapper">
-                <video class="w-100 rounded-4 shadow" autoplay muted loop playsinline>
-                  <source src="videos/heaven_interior.mp4" type="video/mp4">
-                </video>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12 mb-4">
-              <div class="video-wrapper">
-                <video class="w-100 rounded-4 shadow" autoplay muted loop playsinline>
-                  <source src="videos/elite_dental_02.mp4" type="video/mp4">
-                </video>
-              </div>
-            </div>
-          </div>
+          <button class="carousel-control-next custom-arrow" type="button"
+                  data-bs-target="#videoCarousel" data-bs-slide="next">
+            <span aria-hidden="true">&gt;</span>
+          </button>
         </div>
       </div>
-        <!-- Arrows -->
-      <button class="carousel-control-prev custom-arrow" type="button"
-              data-bs-target="#videoCarousel" data-bs-slide="prev">
-        <span aria-hidden="true">&lt;</span>
-      </button>
 
-      <button class="carousel-control-next custom-arrow" type="button"
-              data-bs-target="#videoCarousel" data-bs-slide="next">
-        <span aria-hidden="true">&gt;</span>
-      </button>
-    </div>
-  </div>
-
-</section>
-
-
+    </section>
 
     <!-- Section 6: Blog/Value Proposition Section Start -->
     <section class="ftco-section" id="blog-section">
@@ -480,7 +477,7 @@
     </section>
 
       <!-- Section 8: Call to Action Section Start -->
-    <section class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+    <section class="ftco-section ftco-hireme img" style="background-image: url(images/bg_1.jpg)">
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-md-7 ftco-animate text-center">
@@ -589,11 +586,11 @@
             <div class="ftco-footer-widget mb-4 ml-md-4">
               <h2 class="ftco-heading-2">Links</h2>
               <ul class="list-unstyled">
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Services</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
+                <li><a href="#home-section"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
+                <li><a href="#about-section"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
+                <li><a href="#services-section"><span class="icon-long-arrow-right mr-2"></span>Services</a></li>
+                <li><a href="#projects-section"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
+                <li><a href="#contact-section"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
               </ul>
             </div>
           </div>
@@ -603,8 +600,8 @@
             	<div class="block-23 mb-3">
 	              <ul>
 	                <!-- <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li> -->
-	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+91 6380574059</span></a></li>
-	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">skyzomedia1224@gmail.com</span></a></li>
+	                <li><a href="https://wa.me/6380574059"><span class="icon icon-phone"></span><span class="text">+91 6380574059</span></a></li>
+	                <li><a href="mailto:skyzomedia1224@gmail.com"><span class="icon icon-envelope"></span><span class="text">skyzomedia1224@gmail.com</span></a></li>
 	              </ul>
 	            </div>
             </div>
@@ -627,7 +624,7 @@
 
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
+  <!-- <script src="js/popper.min.js"></script> -->
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery.easing.1.3.js"></script>
   <script src="js/jquery.waypoints.min.js"></script>
@@ -665,6 +662,63 @@
     ride: 'carousel'
   });
 </script>
+
+<script>
+  // Close mobile menu when a nav link is clicked
+  document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      const navbarCollapse = document.querySelector('.navbar-collapse');
+      const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+      if (bsCollapse) {
+        bsCollapse.hide();
+      }
+    });
+  });
+</script>
+
+<!-- <script>
+  // Close menu on nav-link click
+  $('.navbar-nav>li>a').on('click', function(){
+      $('.navbar-collapse').collapse('hide');
+  });
+</script> -->
+
+<!-- <script>
+  // Close mobile menu and keep navbar visible after clicking a link
+  $('.navbar-nav>li>a').on('click', function() {
+    var $navbar = $('.navbar-collapse');
+
+    // Close mobile collapse
+    if ($navbar.hasClass('show')) {
+      $navbar.collapse('hide');
+    }
+
+    // Keep navbar visible
+    $('.ftco_navbar').removeClass('sleep').addClass('awake scrolled');
+  });
+</script> -->
+<!-- 
+<script>
+  $(document).ready(function() {
+    // Remove the scroll listener (if any)
+    $(window).off('scroll');
+
+    // Make navbar visible immediately
+    $('.ftco_navbar')
+      .removeClass('sleep')
+      .addClass('awake')
+      .css({
+        'top': '0',
+        'opacity': '1'
+      });
+
+    // Close mobile menu on link click
+    $('.navbar-nav>li>a').on('click', function() {
+      $('.navbar-collapse').collapse('hide');
+    });
+  });
+</script> -->
+
 
 
   </body>
