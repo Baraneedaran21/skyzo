@@ -71,7 +71,7 @@
             </h4>
             <p>
               <a href="#contact-section" class="btn btn-primary py-3 px-4">Work With Us</a>
-              <a href="#" class="btn btn-white btn-outline-white py-3 px-4">Our Portfolio</a>
+              <a href="#projects-section" class="btn btn-white btn-outline-white py-3 px-4">Our Portfolio</a>
             </p>
           </div>
         </div>
@@ -241,7 +241,7 @@
       </div>
 
       <div class="container position-relative">
-        <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+        <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="15000">
           <div class="carousel-inner">
 
             <!-- Slide 1 -->
@@ -252,6 +252,7 @@
                     <video class="w-100 rounded-4 shadow" autoplay muted loop playsinline>
                       <source src="videos/vipra_client_02.mp4" type="video/mp4">
                     </video>
+                    <button class="mute-toggle">🔇</button>
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-12 mb-4">
@@ -259,6 +260,7 @@
                     <video class="w-100 rounded-4 shadow" autoplay muted loop playsinline>
                       <source src="videos/smilescape_dental.mp4" type="video/mp4">
                     </video>
+                    <button class="mute-toggle">🔇</button>
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-12 mb-4">
@@ -266,6 +268,7 @@
                     <video class="w-100 rounded-4 shadow" autoplay muted loop playsinline>
                       <source src="videos/vipra_client.mp4" type="video/mp4">
                     </video>
+                    <button class="mute-toggle">🔇</button>
                   </div>
                 </div>
               </div>
@@ -279,6 +282,7 @@
                     <video class="w-100 rounded-4 shadow" autoplay muted loop playsinline>
                       <source src="videos/smilescape_dental_ 02.mp4" type="video/mp4">
                     </video>
+                    <button class="mute-toggle">🔇</button>
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-12 mb-4">
@@ -286,6 +290,7 @@
                     <video class="w-100 rounded-4 shadow" autoplay muted loop playsinline>
                       <source src="videos/heaven_interior.mp4" type="video/mp4">
                     </video>
+                    <button class="mute-toggle">🔇</button>
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-12 mb-4">
@@ -293,6 +298,7 @@
                     <video class="w-100 rounded-4 shadow" autoplay muted loop playsinline>
                       <source src="videos/elite_dental_02.mp4" type="video/mp4">
                     </video>
+                    <button class="mute-toggle">🔇</button>
                   </div>
                 </div>
               </div>
@@ -676,6 +682,8 @@
   });
 </script>
 
+
+
 <!-- <script>
   // Close menu on nav-link click
   $('.navbar-nav>li>a').on('click', function(){
@@ -718,6 +726,54 @@
     });
   });
 </script> -->
+<!-- 
+<script>
+  // When any video is clicked:
+  document.querySelectorAll('video').forEach(video => {
+    video.addEventListener('click', function() {
+      // Mute all other videos
+      document.querySelectorAll('video').forEach(v => {
+        if (v !== video) {
+          v.muted = true;
+        }
+      });
+
+      // Toggle mute state of the clicked video
+      video.muted = !video.muted;
+
+      // Ensure it plays (some browsers pause when unmuted)
+      video.play().catch(() => {});
+    });
+  });
+</script> -->
+
+<script>
+  document.querySelectorAll('.video-wrapper').forEach(wrapper => {
+    const video = wrapper.querySelector('video');
+    const button = wrapper.querySelector('.mute-toggle');
+
+    // When the video or button is clicked:
+    wrapper.addEventListener('click', () => {
+      // Mute all other videos
+      document.querySelectorAll('video').forEach(v => {
+        if (v !== video) {
+          v.muted = true;
+          const btn = v.closest('.video-wrapper')?.querySelector('.mute-toggle');
+          if (btn) btn.textContent = '🔇';
+        }
+      });
+
+      // Toggle mute state for the clicked video
+      video.muted = !video.muted;
+      button.textContent = video.muted ? '🔇' : '🔊';
+
+      // Ensure playback continues
+      video.play().catch(() => {});
+    });
+  });
+</script>
+
+
 
 
 
